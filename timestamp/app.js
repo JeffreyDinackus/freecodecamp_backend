@@ -9,7 +9,7 @@ const app = express();
 const port = 3000;
 
 
-app.get('/time', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200);
   res.send({ "unix": date.getTime(), "utc": date.toUTCString() });
 });
